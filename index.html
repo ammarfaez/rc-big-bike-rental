@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="RC Big Bike Rental Malaysia (RCBR) — rent scooters, naked bikes, sport bikes and cruisers. Flexible rates, doorstep delivery, booked in minutes on WhatsApp." />
+  <title>RC Big Bike Rental Malaysia (RCBR)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#hero" class="brand">
+        <span class="brand__spoke" aria-hidden="true"></span>
+        <span class="brand__name">RCBR</span>
+      </a>
+
+      <nav class="nav__menu" id="navMenu" aria-label="Primary">
+        <a href="#fleet" class="nav__link" data-i18n="nav.fleet">The Fleet</a>
+        <a href="#rates" class="nav__link" data-i18n="nav.rates">Rates</a>
+        <a href="#about" class="nav__link" data-i18n="nav.about">The Garage</a>
+        <a href="#faq" class="nav__link" data-i18n="nav.faq">FAQ</a>
+        <a href="#reviews" class="nav__link" data-i18n="nav.reviews">Riders</a>
+        <div class="lang-switch" role="group" aria-label="Language / Bahasa">
+          <button class="lang-switch__btn is-active" type="button" data-lang="bm" aria-label="Bahasa Melayu">BM</button>
+          <button class="lang-switch__btn" type="button" data-lang="en" aria-label="English">EN</button>
+        </div>
+        <a href="#contact" class="btn btn--primary nav__cta" data-i18n="nav.book">Book a Bike</a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero__photo" role="img" aria-label="A motorcycle on an open mountain road at golden hour"></div>
+    <div class="hero__scrim"></div>
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <p class="hero__kicker" data-i18n="hero.kicker">Motorcycle rentals &middot; Est. 2016</p>
+        <h1 class="hero__title" data-i18n-html="hero.title">Grab a bike.<br />Go <span class="hero__title-accent">explore.</span></h1>
+        <p class="hero__sub" data-i18n="hero.sub">
+          Scooters, nakeds, sport bikes and cruisers — serviced in our own garage after every ride,
+          delivered to your door, and booked in minutes over WhatsApp.
+        </p>
+        <div class="hero__actions">
+          <a href="https://wa.me/60134484332" target="_blank" rel="noopener" class="btn btn--primary" data-i18n="hero.book">Book on WhatsApp</a>
+          <a href="#fleet" class="btn btn--ghost" data-i18n="hero.fleet">See the fleet</a>
+        </div>
+      </div>
+
+      <ul class="hero__ticks">
+        <li><span class="tick" aria-hidden="true"></span><span data-i18n="hero.tick1">Serviced after every single ride</span></li>
+        <li><span class="tick" aria-hidden="true"></span><span data-i18n="hero.tick2">Two helmets, gloves &amp; route maps included</span></li>
+        <li><span class="tick" aria-hidden="true"></span><span data-i18n="hero.tick3">24/7 roadside assistance</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===================== FLEET ===================== -->
+  <section class="section fleet" id="fleet">
+    <div class="container">
+      <header class="section__head">
+        <p class="section__eyebrow" data-i18n="fleet.eyebrow">The Fleet</p>
+        <h2 class="section__title" data-i18n-html="fleet.title">A machine for<br />every rider.</h2>
+      </header>
+
+      <div class="fleet__grid">
+        <article class="bike">
+          <div class="bike__img bike__img--scooter"></div>
+          <div class="bike__num">01</div>
+          <h3 class="bike__name" data-i18n="fleet.scooter.name">Scooter</h3>
+          <p class="bike__desc" data-i18n="fleet.scooter.desc">Twist-and-go, light and city-friendly. The easiest way to dart through traffic.</p>
+          <span class="bike__rate" data-i18n-html="fleet.scooter.rate">from RM12 <small>/day</small></span>
+        </article>
+
+        <article class="bike">
+          <div class="bike__img bike__img--naked"></div>
+          <div class="bike__num">02</div>
+          <h3 class="bike__name" data-i18n="fleet.naked.name">Naked</h3>
+          <p class="bike__desc" data-i18n="fleet.naked.desc">Upright, punchy and versatile. Commutes by day, canyon runs by weekend.</p>
+          <span class="bike__rate" data-i18n-html="fleet.naked.rate">from RM35 <small>/day</small></span>
+        </article>
+
+        <article class="bike">
+          <div class="bike__img bike__img--sport"></div>
+          <div class="bike__num">03</div>
+          <h3 class="bike__name" data-i18n="fleet.sport.name">Sport</h3>
+          <p class="bike__desc" data-i18n="fleet.sport.desc">Full fairing, sharp throttle. For riders who want the track-day feel on the road.</p>
+          <span class="bike__rate" data-i18n-html="fleet.sport.rate">from RM55 <small>/day</small></span>
+        </article>
+
+        <article class="bike">
+          <div class="bike__img bike__img--cruiser"></div>
+          <div class="bike__num">04</div>
+          <h3 class="bike__name" data-i18n="fleet.cruiser.name">Cruiser</h3>
+          <p class="bike__desc" data-i18n="fleet.cruiser.desc">Low seat, long range, built for sweeping highways and relaxed touring.</p>
+          <span class="bike__rate" data-i18n-html="fleet.cruiser.rate">from RM40 <small>/day</small></span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== RATES ===================== -->
+  <section class="section rates" id="rates">
+    <div class="container">
+      <header class="section__head">
+        <p class="section__eyebrow" data-i18n="rates.eyebrow">Rates</p>
+        <h2 class="section__title" data-i18n="rates.title">Simple rates. No surprises.</h2>
+        <p class="section__sub" data-i18n="rates.sub">Daily, weekly or monthly — the longer you ride, the cheaper it gets. All include delivery, insurance &amp; two helmets.</p>
+      </header>
+
+      <div class="rates__grid">
+        <div class="rate">
+          <p class="rate__label" data-i18n="rates.daily.label">Daily</p>
+          <p class="rate__price" data-i18n-html="rates.daily.price"><span class="currency">RM</span>35 <small>/day</small></p>
+          <ul class="rate__list">
+            <li data-i18n="rates.daily.b1">Perfect for a day trip</li>
+            <li data-i18n="rates.daily.b2">Two helmets &amp; gloves included</li>
+            <li data-i18n="rates.daily.b3">Roadside assistance</li>
+          </ul>
+          <a href="https://wa.me/60134484332" target="_blank" rel="noopener" class="btn btn--ghost btn--block" data-i18n="rates.daily.cta">Pick daily</a>
+        </div>
+
+        <div class="rate rate--featured">
+          <p class="rate__tag" data-i18n="rates.weekly.tag">Most popular</p>
+          <p class="rate__label" data-i18n="rates.weekly.label">Weekly</p>
+          <p class="rate__price" data-i18n-html="rates.weekly.price"><span class="currency">RM</span>195 <small>/wk</small></p>
+          <ul class="rate__list">
+            <li data-i18n="rates.weekly.b1">Best value for longer tours</li>
+            <li data-i18n="rates.weekly.b2">Free doorstep delivery</li>
+            <li data-i18n="rates.weekly.b3">Free maintenance &amp; swap anytime</li>
+          </ul>
+          <a href="https://wa.me/60134484332" target="_blank" rel="noopener" class="btn btn--primary btn--block" data-i18n="rates.weekly.cta">Pick weekly</a>
+        </div>
+
+        <div class="rate">
+          <p class="rate__label" data-i18n="rates.monthly.label">Monthly</p>
+          <p class="rate__price" data-i18n-html="rates.monthly.price"><span class="currency">RM</span>690 <small>/mo</small></p>
+          <ul class="rate__list">
+            <li data-i18n="rates.monthly.b1">Best for residents &amp; expats</li>
+            <li data-i18n="rates.monthly.b2">Swap bikes any time</li>
+            <li data-i18n="rates.monthly.b3">Priority booking guarantee</li>
+          </ul>
+          <a href="https://wa.me/60134484332" target="_blank" rel="noopener" class="btn btn--ghost btn--block" data-i18n="rates.monthly.cta">Pick monthly</a>
+        </div>
+      </div>
+      <p class="rates__note" data-i18n="rates.note">Need a specific model or a long-term lease? Message us — we'll make a plan work.</p>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT / GARAGE ===================== -->
+  <section class="section about" id="about">
+    <div class="container about__grid">
+      <div class="about__media" role="img" aria-label="Motorcycle on a lift inside the RCBR garage"></div>
+      <div class="about__body">
+        <p class="section__eyebrow" data-i18n="about.eyebrow">The Garage</p>
+        <h2 class="section__title" data-i18n="about.title">A garage that behaves like one.</h2>
+        <p class="about__lead" data-i18n="about.lead">
+          RC Big Bike Rental Malaysia (RCBR) started in 2016 as a two-person repair bench. We tore down old engines,
+          learned every torque spec, and fell in love with honest work. The rental fleet grew out of that — machines we
+          maintain and trust as our own.
+        </p>
+        <p class="about__copy" data-i18n="about.copy">
+          Every single bike is serviced, checked and road-tested in our own garage after every return. You
+          don't get a machine off a rack; you get one we'd happily ride across the country ourselves.
+        </p>
+        <ul class="about__facts">
+          <li><strong>2016</strong><span data-i18n="about.f1">Founded as a repair shop</span></li>
+          <li><strong>60+</strong><span data-i18n="about.f2">Bikes, serviced in-house</span></li>
+          <li><strong>12k</strong><span data-i18n="about.f3">Riders and counting</span></li>
+          <li><strong>4.9/5</strong><span data-i18n="about.f4">Average rider rating</span></li>
+        </ul>
+        <a href="#contact" class="btn btn--primary" data-i18n="about.cta">Come say hi</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GALLERY ===================== -->
+  <section class="section gallery" id="gallery">
+    <div class="container">
+      <header class="section__head">
+        <p class="section__eyebrow" data-i18n="gallery.eyebrow">Gallery</p>
+        <h2 class="section__title" data-i18n="gallery.title">Machines, riders &amp; the open road.</h2>
+      </header>
+
+      <div class="gallery__grid">
+        <figure class="gallery__item gallery__item--tall"><img src="assets/img/gallery-1.jpg" alt="Motorcycle on a coastal road at sunset" loading="lazy" /></figure>
+        <figure class="gallery__item"><img src="assets/img/gallery-2.jpg" alt="Scooter parked in the city" loading="lazy" /></figure>
+        <figure class="gallery__item"><img src="assets/img/gallery-3.jpg" alt="Sport bike on a mountain pass" loading="lazy" /></figure>
+        <figure class="gallery__item"><img src="assets/img/gallery-4.jpg" alt="Sport motorcycle with helmet in a garage" loading="lazy" /></figure>
+        <figure class="gallery__item"><img src="assets/img/gallery-5.jpg" alt="Motorcycle parked with saddlebags on a road" loading="lazy" /></figure>
+        <figure class="gallery__item gallery__item--wide"><img src="assets/img/gallery-6.jpg" alt="Group ride along an open highway" loading="lazy" /></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section class="section faq" id="faq">
+    <div class="container container--narrow">
+      <header class="section__head">
+        <p class="section__eyebrow" data-i18n="faq.eyebrow">FAQ</p>
+        <h2 class="section__title" data-i18n="faq.title">Fair questions. Straight answers.</h2>
+      </header>
+
+      <div class="faq__list">
+        <details class="faq__item" open>
+          <summary><span data-i18n="faq.q1">What do I need to rent a motorcycle?</span><span class="faq__plus" aria-hidden="true"></span></summary>
+          <div class="faq__body"><p data-i18n="faq.a1">A valid motorcycle driving licence, a decent riding history and a refundable security deposit. Scooters are more relaxed — a car licence may be enough.</p></div>
+        </details>
+
+        <details class="faq__item">
+          <summary><span data-i18n="faq.q2">Is there a minimum age?</span><span class="faq__plus" aria-hidden="true"></span></summary>
+          <div class="faq__body"><p data-i18n="faq.a2">You must be 21+ to rent, and at least 2 years licensed riding experience is required for our larger bikes.</p></div>
+        </details>
+
+        <details class="faq__item">
+          <summary><span data-i18n="faq.q3">How much is the deposit, and when is it back?</span><span class="faq__plus" aria-hidden="true"></span></summary>
+          <div class="faq__body"><p data-i18n="faq.a3">A holding deposit is taken at booking and returned in full once the bike is back in good shape — usually within 24 hours.</p></div>
+        </details>
+
+        <details class="faq__item">
+          <summary><span data-i18n="faq.q4">Are the bikes insured?</span><span class="faq__plus" aria-hidden="true"></span></summary>
+          <div class="faq__body"><p data-i18n="faq.a4">Third-party insurance is included on every rental. You can add premium full cover for extra peace of mind on longer tours.</p></div>
+        </details>
+
+        <details class="faq__item">
+          <summary><span data-i18n="faq.q5">Do you deliver and pick up?</span><span class="faq__plus" aria-hidden="true"></span></summary>
+          <div class="faq__body"><p data-i18n="faq.a5">We deliver and pick up anywhere in the city at a small flat fee, and it's free with weekly or monthly rentals.</p></div>
+        </details>
+
+        <details class="faq__item">
+          <summary><span data-i18n="faq.q6">What if I break down on the road?</span><span class="faq__plus" aria-hidden="true"></span></summary>
+          <div class="faq__body"><p data-i18n="faq.a6">Every rental includes 24/7 roadside assistance. One call on WhatsApp and we'll get a mechanic to you or bring a replacement ride.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== REVIEWS ===================== -->
+  <section class="section reviews" id="reviews">
+    <div class="container">
+      <header class="section__head">
+        <p class="section__eyebrow" data-i18n="reviews.eyebrow">Riders</p>
+        <h2 class="section__title" data-i18n="reviews.title">What the regulars say.</h2>
+      </header>
+
+      <div class="reviews__grid">
+        <figure class="review">
+          <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote data-i18n="reviews.r1">"Booked a naked bike in two minutes on WhatsApp. It was spotless, delivered to my hotel and the route map made the whole trip easy."</blockquote>
+          <figcaption><span class="review__avatar">JS</span><div><strong>James S.</strong><span data-i18n="reviews.r1.role">Weekly rental</span></div></figcaption>
+        </figure>
+
+        <figure class="review">
+          <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote data-i18n="reviews.r2">"Took a sport bike through the mountain passes and it handled like a dream. Helmets, gloves and assistance all included. Highly recommend."</blockquote>
+          <figcaption><span class="review__avatar">MR</span><div><strong>Maya R.</strong><span data-i18n="reviews.r2.role">Tour rider</span></div></figcaption>
+        </figure>
+
+        <figure class="review">
+          <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote data-i18n="reviews.r3">"Fair prices, genuinely friendly service and the scooter made my daily commute a joy. Been a monthly customer ever since."</blockquote>
+          <figcaption><span class="review__avatar">DK</span><div><strong>Daniel K.</strong><span data-i18n="reviews.r3.role">Monthly rental</span></div></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact__grid">
+        <div class="contact__info">
+          <p class="section__eyebrow" data-i18n="contact.eyebrow">Contact</p>
+          <h2 class="contact__title" data-i18n="contact.title">Let's get you on a bike.</h2>
+          <p class="contact__sub" data-i18n="contact.sub">The fastest way to book is a quick message on WhatsApp — we reply within the hour, most days.</p>
+
+          <a href="https://wa.me/60134484332" target="_blank" rel="noopener" class="contact__wa">
+            <span class="contact__wa-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.5 4.1 1.5 5.9L4 29l8.3-1.5c1.2.3 2.4.5 3.7.5 6.6 0 12-5.4 12-12S22.6 3 16 3zm5.9 16.9c-.3.8-1.5 1.5-2.1 1.6-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.7-.6-2.9-1.3-4.8-4.1-5-4.3-.1-.2-1.2-1.6-1.2-3s.8-2.1 1-2.4c.3-.3.6-.4.8-.4h.6c.2 0 .4-.1.6.4l.9 2.1c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.4-.1.7.2.3.9 1.4 1.9 2.3 1.3 1.2 2.4 1.5 2.7 1.7.3.2.5.1.7-.1l.9-1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3 0 .1 0 .7-.1 1.3z"/></svg>
+            </span>
+            <span class="contact__wa-body">
+              <strong data-i18n="contact.wa.title">Book on WhatsApp</strong>
+              <small data-i18n="contact.wa.sub">Instant replies &middot; +60 13-448 4332</small>
+            </span>
+          </a>
+
+          <div class="contact__details">
+            <div class="contact__row"><span class="contact__label" data-i18n="contact.visit">Visit</span><span>12 Pedal Lane, Cycleside District</span></div>
+            <div class="contact__row"><span class="contact__label" data-i18n="contact.hours">Hours</span><span data-i18n="contact.hours.val">Mon&ndash;Sun &middot; 8:00&ndash;20:00</span></div>
+            <div class="contact__row"><span class="contact__label" data-i18n="contact.email">Email</span><span>hello@rcbr.example</span></div>
+          </div>
+        </div>
+
+        <form class="contact__form" id="contactForm">
+          <h3 class="contact__form-title" data-i18n="contact.form.title">Or drop us a line</h3>
+          <div class="field">
+            <label for="name" data-i18n="form.name.label">Your name</label>
+            <input id="name" name="name" type="text" placeholder="Jane Doe" data-i18n-ph="form.name.ph" required />
+          </div>
+          <div class="field">
+            <label for="phone" data-i18n="form.phone.label">Phone / WhatsApp number</label>
+            <input id="phone" name="phone" type="tel" placeholder="+60 ..." required />
+          </div>
+          <div class="field">
+            <label for="message" data-i18n="form.message.label">What do you need?</label>
+            <textarea id="message" name="message" rows="4" placeholder="I'd like a naked bike for a week..." data-i18n-ph="form.message.ph" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--block" data-i18n="form.submit">Send via WhatsApp</button>
+          <p class="contact__privacy" data-i18n="form.privacy">This opens WhatsApp with your message pre-filled — no account needed.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="brand__name brand__name--footer">RC BIG BIKE RENTAL MALAYSIA</span>
+      <p class="footer__tag" data-i18n="footer.tag">Ride more. Worry less.</p>
+      <p class="footer__copy">&copy; <span id="year"></span> <span data-i18n="footer.copy">RC Big Bike Rental Malaysia (RCBR) &middot; All rights reserved.</span></p>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
